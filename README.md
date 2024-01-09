@@ -22,12 +22,13 @@
 Архитектура: ResNet-50
 
 Гиперпараметры:
-- batch size 128
-- learning rate 0.001
-- momentum 0.9
-- loss cross-entropy
-- device cuda
-- epochs 15/25
+- batch size: 128
+- optimizer: SGD
+- learning rate: 0.001
+- momentum: 0.9
+- loss: cross-entropy
+- device: cuda
+- epochs: 15/25
 
 Логгирование(wandb)
 - [Метрки по классам](./wandb_report/wandb1.png)
