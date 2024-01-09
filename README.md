@@ -41,9 +41,9 @@
     [лосс](./results/runs/2024-01-09_17_04_46_222598/validation_loss.png)
 - График метрик на валидационной выборке во время обучения
     - 15 эпох
-    [метрики](./results/runs/2024-01-09_16_58_34_927901/validation_metrcis.png)
+    [метрики](./results/runs/2024-01-09_16_58_34_927901/validation_metrics.png)
     - 25 эпох
-    [метрики](./results/runs/2024-01-09_17_04_46_222598/validation_metrcis.png)
+    [метрики](./results/runs/2024-01-09_17_04_46_222598/validation_metrics.png)
 - 5-10 примеров изображений с результатом работы сети
     [ноутбук](./show_images.ipynb)
 - Значения метрик
