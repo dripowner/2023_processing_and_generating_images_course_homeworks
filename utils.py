@@ -2,7 +2,7 @@ import torch
 import tqdm
 
 
-def train(autoencoder, data, device, epochs=20):
+def train(autoencoder, data, device, epochs=20, vae=False):
     opt = torch.optim.Adam(autoencoder.parameters())
     for epoch in tqdm.tqdm(range(epochs)):
         running_loss = 0
@@ -12,7 +12,10 @@ def train(autoencoder, data, device, epochs=20):
             x = x.to(device) # GPU
             opt.zero_grad()
             x_hat = autoencoder(x)
-            loss = ((x - x_hat)**2).sum()
+            if vae:
+                loss = ((x - x_hat)**2).sum() + autoencoder.encoder.kl
+            else:
+                loss = ((x - x_hat)**2).sum()
             running_loss += loss
             loss.backward()
             opt.step()
@@ -20,7 +23,7 @@ def train(autoencoder, data, device, epochs=20):
     return autoencoder
 
 
-def test(autoencoder, data, device, thresh):
+def test(autoencoder, data, device, thresh, vae=False):
     true, pred = [], []
     losses = []
     count = 0
@@ -30,7 +33,10 @@ def test(autoencoder, data, device, thresh):
         x = x.to(device) # GPU
         x_hat = autoencoder(x)
 
-        loss = ((x - x_hat)**2).sum()
+        if vae:
+            loss = ((x - x_hat)**2).sum() + autoencoder.encoder.kl
+        else:
+            loss = ((x - x_hat)**2).sum()
         
         if loss >= thresh:
             pred.append(1)
