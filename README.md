@@ -34,25 +34,37 @@
 Эксперименты:
 1. 100 % датасета
     - Лоссы в обучении
-        - ![Предобученный feature extractor](./exp1/results/SL_pretrained/validation_loss.png)
-        - ![Рандомно инициализированный feature extractor](./exp1/results/SL/validation_loss.png)
+        - Предобученный feature extractor
+        ![Предобученный feature extractor](./exp1/results/SL_pretrained/validation_loss.png)
+        - Рандомно инициализированный feature extractor
+        ![Рандомно инициализированный feature extractor](./exp1/results/SL/validation_loss.png)
     - Метрики в обучении
-        - ![Предобученный feature extractor](./exp1/results/SL_pretrained/validation_metrics.png)
-        - ![Рандомно инициализированный feature extractor](./exp1/results/SL/validation_metrics.png)
+        - Предобученный feature extractor
+        ![Предобученный feature extractor](./exp1/results/SL_pretrained/validation_metrics.png)
+        - Рандомно инициализированный feature extractor
+        ![Рандомно инициализированный feature extractor](./exp1/results/SL/validation_metrics.png)
 2. 100 % датасета
     - Лоссы в обучении
-        - ![Предобученный feature extractor](./exp2/results/SL_pretrained/validation_loss.png)
-        - ![Рандомно инициализированный feature extractor](./exp1/results/SL/validation_loss.png)
+        - Предобученный feature extractor
+        ![Предобученный feature extractor](./exp2/results/SL_pretrained/validation_loss.png)
+        - Рандомно инициализированный feature extractor
+        ![Рандомно инициализированный feature extractor](./exp1/results/SL/validation_loss.png)
     - Метрики в обучении
-        - ![Предобученный feature extractor](./exp2/results/SL_pretrained/validation_metrics.png)
-        - ![Рандомно инициализированный feature extractor](./exp1/results/SL/validation_metrics.png)
+        - Предобученный feature extractor
+        ![Предобученный feature extractor](./exp2/results/SL_pretrained/validation_metrics.png)
+        - Рандомно инициализированный feature extractor
+        ![Рандомно инициализированный feature extractor](./exp1/results/SL/validation_metrics.png)
 3. 100 % датасета
     - Лоссы в обучении
-        - ![Предобученный feature extractor](./exp3/results/SL_pretrained/validation_loss.png)
-        - ![Рандомно инициализированный feature extractor](./exp1/results/SL/validation_loss.png)
+        - Предобученный feature extractor
+        ![Предобученный feature extractor](./exp3/results/SL_pretrained/validation_loss.png)
+        - Рандомно инициализированный feature extractor
+        ![Рандомно инициализированный feature extractor](./exp1/results/SL/validation_loss.png)
     - Метрики в обучении
-        - ![Предобученный feature extractor](./exp3/results/SL_pretrained/validation_metrics.png)
-        - ![Рандомно инициализированный feature extractor](./exp1/results/SL/validation_metrics.png)
+        - Предобученный feature extractor
+        ![Предобученный feature extractor](./exp3/results/SL_pretrained/validation_metrics.png)
+        - Рандомно инициализированный feature extractor
+        ![Рандомно инициализированный feature extractor](./exp1/results/SL/validation_metrics.png)
 
 Вывод:
 Во всех экспериментах модель с рандомно инициализированным feature extractor обучается быстрее и достигает больших метрик на валидации
