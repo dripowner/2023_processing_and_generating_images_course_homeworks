@@ -1,0 +1,1 @@
+{"model": "resnet50", "batch_size": 128, "epochs": 20, "lr": 0.001, "n_classes": 10, "device": "cuda"}
