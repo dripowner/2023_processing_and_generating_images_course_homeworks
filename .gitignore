@@ -6,3 +6,5 @@ results/runs/*/model
 homework_2_dataset
 model
 online
+pretrained_feature_extractors
+weights
